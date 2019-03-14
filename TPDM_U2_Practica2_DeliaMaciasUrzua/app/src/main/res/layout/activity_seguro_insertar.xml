@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Seguro_insertar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idseguroSeg"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripciòn"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripcionSeg"
+        android:inputType="text"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="AAAA/MM/DD"
+        android:id="@+id/fechaSeg"
+        android:inputType="date"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipoSeg"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Télefono"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefonoSeg"></EditText>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/btn_guardarSeg"
+            android:layout_gravity="center"
+            android:text="Guardar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_actualizarSeg"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/btn_guardarSeg"
+            android:text="Actualizar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_eliminarSeg"
+            android:layout_gravity="center"
+            android:text="Eliminar"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

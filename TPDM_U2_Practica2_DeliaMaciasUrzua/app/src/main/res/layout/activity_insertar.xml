@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Activity_insertar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono"
+        android:inputType="phone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripcion"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:hint="AAAA/MM/DD"
+        android:inputType="date"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/btn_guardar"
+            android:layout_gravity="center"
+            android:text="Guardar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_actualizar"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/btn_guardar"
+            android:text="Actualizar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_eliminar"
+            android:layout_gravity="center"
+            android:text="Eliminar"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
